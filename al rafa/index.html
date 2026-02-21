@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
     <title>Al Rafa Car Accessories | Toyota, Nissan & 4x4 Specialists Doha</title>
     <meta name="description"
         content="One of Qatar's most trusted car accessories shops. Specialists in Toyota, Nissan, Lexus, Chevrolet, Jeep, and Volkswagen parts. Located on Al Ittihad St, Doha.">
@@ -1005,44 +1006,124 @@
 
         .product-card {
             background-color: var(--card-bg);
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            transition: 0.3s;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         .prod-img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
             background-color: #000;
         }
 
+        .in-stock-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+
         .prod-info {
             padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
 
         .prod-cat {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
+            font-weight: 600;
             color: var(--gold-primary);
             text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
         }
 
         .prod-title {
             font-size: 1.1rem;
-            margin: 0.5rem 0;
             color: var(--beige-primary);
+            margin: 0 0 8px 0;
+            font-weight: 500;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 3.1rem;
+            /* Reserves space for exactly 2 lines */
         }
 
-        .prod-price {
-            font-size: 1.2rem;
+        .prod-finishes {
+            font-size: 0.95rem;
+            color: #d1d5db;
+            margin: 0 0 12px 0;
+            font-weight: 400;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 2.6rem;
+        }
+
+        .prod-ask-price {
+            font-size: 0.95rem;
+            color: var(--beige-primary);
+            margin: auto 0 1.5rem 0;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .btn-whatsapp-catalog {
+            background-color: var(--gold-primary);
+            color: var(--navy-primary);
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 6px;
             font-weight: 600;
-            color: var(--gold-bright);
-            margin-bottom: 1rem;
+            font-family: var(--font-body);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+        }
+
+        .btn-whatsapp-catalog:hover {
+            background-color: var(--gold-bright);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
         }
 
         .compatibility-badge {
@@ -1086,48 +1167,42 @@
             background-color: var(--navy-primary);
         }
 
-        /* Tabs */
+        /* Premium Brand Cards Grid */
         .tabs-section {
             padding: 7rem 5%;
+            background: linear-gradient(180deg, var(--bg-color) 0%, #050b14 100%);
         }
 
         .tabs-nav {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 1rem;
-            margin-bottom: 2rem;
-            overflow-x: auto;
-            padding-bottom: 1rem;
+            margin-bottom: 3rem;
         }
 
         .tab-btn {
-            background-color: var(--card-bg);
-            border: 1px solid var(--navy-secondary);
-            color: var(--text-secondary);
-            padding: 0.8rem 2rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: var(--font-body);
+            background-color: #1a1f24;
+            color: var(--beige-primary);
+            border: none;
+            padding: 1rem 3rem;
+            border-radius: 6px;
+            font-size: 1rem;
             font-weight: 500;
-            white-space: nowrap;
-            transition: all 0.3s var(--ease-smooth);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: var(--font-body);
+        }
+
+        .tab-btn:hover {
+            background-color: var(--navy-primary);
+            opacity: 0.9;
         }
 
         .tab-btn.active {
             background-color: var(--gold-primary);
             color: var(--navy-primary);
-            border-color: var(--gold-primary);
-        }
-
-        .tab-btn:hover {
-            transform: scale(1.03);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border-color: var(--gold-primary);
-            color: var(--beige-primary);
-        }
-
-        .tab-btn.active:hover {
-            color: var(--navy-primary);
+            font-weight: 600;
         }
 
         .tab-content {
@@ -2085,58 +2160,81 @@
             <div class="results-grid" id="essentials-grid">
 
                 <div class="product-card reveal">
+                    <div class="in-stock-badge">In Stock</div>
                     <div class="prod-img"
                         style="background-image: url('https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=400')">
                     </div>
                     <div class="prod-info">
                         <div class="prod-cat">Cleaning</div>
                         <h4 class="prod-title">Premium Ceramic Car Wash Soap</h4>
-                        <div class="prod-price">QAR 45</div>
-                        <button class="btn btn-whatsapp" style="width:100%"
-                            onclick="enquireOnWhatsApp('Premium Ceramic Car Wash Soap (QAR 45)')">Buy via
-                            WhatsApp</button>
+                        <button class="btn-whatsapp-catalog"
+                            onclick="enquireOnWhatsApp('Premium Ceramic Car Wash Soap')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                            </svg>
+                            Enquire on WhatsApp
+                        </button>
                     </div>
                 </div>
 
                 <div class="product-card reveal">
+                    <div class="in-stock-badge">In Stock in Store</div>
                     <div class="prod-img"
                         style="background-image: url('https://images.unsplash.com/photo-1627680509657-36c1e5cbdbdf?auto=format&fit=crop&q=80&w=400')">
                     </div>
                     <div class="prod-info">
-                        <div class="prod-cat">Interior</div>
                         <h4 class="prod-title">All-Weather Custom Fit Car Mats</h4>
-                        <div class="prod-price">QAR 120</div>
-                        <button class="btn btn-whatsapp" style="width:100%"
-                            onclick="enquireOnWhatsApp('All-Weather Custom Fit Car Mats (QAR 120)')">Buy via
-                            WhatsApp</button>
+                        <div class="prod-finishes">Available in: Black / Beige / Gray</div>
+                        <div class="prod-ask-price">Ask for Price</div>
+                        <button class="btn-whatsapp-catalog"
+                            onclick="enquireOnWhatsApp('All-Weather Custom Fit Car Mats')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                            </svg>
+                            Enquire on WhatsApp
+                        </button>
                     </div>
                 </div>
 
                 <div class="product-card reveal">
+                    <div class="in-stock-badge">In Stock in Store</div>
                     <div class="prod-img"
                         style="background-image: url('https://images.unsplash.com/photo-1582294451016-5b48154d852a?auto=format&fit=crop&q=80&w=400')">
                     </div>
                     <div class="prod-info">
-                        <div class="prod-cat">Maintenance</div>
                         <h4 class="prod-title">Engine Bay Degreaser & Shine</h4>
-                        <div class="prod-price">QAR 35</div>
-                        <button class="btn btn-whatsapp" style="width:100%"
-                            onclick="enquireOnWhatsApp('Engine Bay Degreaser & Shine (QAR 35)')">Buy via
-                            WhatsApp</button>
+                        <div class="prod-finishes">Available in: N/A</div>
+                        <div class="prod-ask-price">Ask for Price</div>
+                        <button class="btn-whatsapp-catalog"
+                            onclick="enquireOnWhatsApp('Engine Bay Degreaser & Shine')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                            </svg>
+                            Enquire on WhatsApp
+                        </button>
                     </div>
                 </div>
 
                 <div class="product-card reveal">
+                    <div class="in-stock-badge">In Stock in Store</div>
                     <div class="prod-img"
                         style="background-image: url('https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=400')">
                     </div>
                     <div class="prod-info">
-                        <div class="prod-cat">Accessories</div>
                         <h4 class="prod-title">Premium Microfiber Towel Set (3 Pcs)</h4>
-                        <div class="prod-price">QAR 25</div>
-                        <button class="btn btn-whatsapp" style="width:100%"
-                            onclick="enquireOnWhatsApp('Premium Microfiber Towel Set (QAR 25)')">Buy via
-                            WhatsApp</button>
+                        <div class="prod-finishes">Available in: Yellow / Blue / Gray</div>
+                        <div class="prod-ask-price">Ask for Price</div>
+                        <button class="btn-whatsapp-catalog"
+                            onclick="enquireOnWhatsApp('Premium Microfiber Towel Set')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" />
+                            </svg>
+                            Enquire on WhatsApp
+                        </button>
                     </div>
                 </div>
             </div>
@@ -2486,6 +2584,10 @@
         </a>
     </div>
 
+    <!-- External Inventory Data -->
+    <script src="js/products.js"></script>
+
+    <!-- App Logic -->
     <script>
         // ============================================================
         // 🖼️ IMAGE CONFIGURATION
@@ -2498,12 +2600,12 @@
             parallax_2: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1920', // Speed
             parallax_3: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&q=80&w=1920',
             brand_logos: {
-                Toyota: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Toyota_carlogo.svg/1024px-Toyota_carlogo.svg.png',
-                Nissan: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Nissan_logo.png/1024px-Nissan_logo.png',
-                Lexus: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Lexus_logo_2023.svg/1024px-Lexus_logo_2023.svg.png',
-                Chevrolet: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Chevrolet_logo.png/1024px-Chevrolet_logo.png',
-                Jeep: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Jeep_Logo.svg/1024px-Jeep_Logo.svg.png',
-                Volkswagen: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Volkswagen_logo_2019.svg/1024px-Volkswagen_logo_2019.svg.png',
+                Toyota: 'images/Toyota logo.jpeg',
+                Nissan: 'images/Nissan logo.png',
+                Lexus: 'images/Lexus logo.png',
+                Chevrolet: 'images/Chevrolet logo.png',
+                Jeep: 'images/Jeep logo.png',
+                Volkswagen: 'images/Volkswagen logo.png',
             },
             brand_banners: {
                 Toyota: 'https://images.unsplash.com/photo-1582029704222-29774a3f295b?auto=format&fit=crop&q=80&w=1200',
@@ -2537,6 +2639,31 @@
                 customer_3: 'https://ui-avatars.com/api/?name=Mohd+K&background=D4AF37&color=fff',
             },
         };
+
+        // ============================================================
+        // 🎨 COLOR AVAILABILITY HELPER
+        // ============================================================
+        function getColorsForYear(product, searchYear) {
+            // If the product doesn't use the new year-mapped colors, hide the line entirely
+            if (!product.availableColors) {
+                return null;
+            }
+
+            // Iterate over the year brackets (e.g., "1998-2007")
+            for (const [yearBracket, colors] of Object.entries(product.availableColors)) {
+                const [startStr, endStr] = yearBracket.split('-');
+                const startYear = parseInt(startStr);
+                const endYear = parseInt(endStr);
+
+                // If the searched year falls within this bracket, return these colors
+                if (searchYear >= startYear && searchYear <= endYear) {
+                    return colors;
+                }
+            }
+
+            // Fallback if the year exists but has no defined colors
+            return 'Check for availability';
+        }
 
         // ============================================================
         // 🚗 BRAND DATA OBJECT
@@ -2711,9 +2838,9 @@
                 // Add listener for model change to enable year
                 modelSelect.onchange = () => {
                     if (modelSelect.value) {
-                        // Populate Years (Generic 2000-2025 for now)
+                        // Populate Years (1998 to 2025)
                         yearSelect.innerHTML = '<option value="">Select Year...</option>';
-                        for (let y = 2025; y >= 2000; y--) {
+                        for (let y = 2025; y >= 1998; y--) {
                             const opt = document.createElement('option');
                             opt.value = y;
                             opt.innerText = y;
@@ -2774,45 +2901,50 @@
 
             // Show the container
             container.style.display = 'block';
+            grid.innerHTML = ''; // Clear previous results
 
-            // Populate Grid (Mock Products for now, user will provide list later)
-            grid.innerHTML = '';
+            // Filter Actual Inventory
+            const selectedYear = parseInt(year);
+            const results = window.INVENTORY.filter(product => {
+                // If the product is for a Land Cruiser, also show it for Prado
+                const modelMatch = product.model === model ||
+                    (product.model === 'Land Cruiser' && model === 'Prado');
 
-            // Mock categories to show diverse parts
-            const mockCategories = ['Lighting', 'Suspension', 'Body Panel', 'Engine Part', 'Interior', 'Accessories'];
+                return product.brand === brand &&
+                    modelMatch &&
+                    selectedYear >= product.yearStart &&
+                    selectedYear <= product.yearEnd;
+            });
 
-            for (let i = 1; i <= 6; i++) {
-                const category = mockCategories[i - 1];
-                const productName = `${brand} ${model} ${category} (Premium)`;
-                const price = (150 * i).toString();
-                const fits = `${brand} ${model} ${year}`;
-                const qvData = JSON.stringify({
-                    name: productName,
-                    price: price,
-                    cat: category,
-                    fits: fits
-                }).replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+            if (results.length === 0) {
+                subheading.innerText = `Sorry, no parts found for this specific vehicle yet.`;
+            } else {
+                subheading.innerText = `Found ${results.length} parts in stock`;
 
-                // Use placeholder thumbnail
-                const imgKey = 'product_00' + ((i % 3) + 1);
-                const imgUrl = SITE_IMAGES.products[imgKey] || SITE_IMAGES.model_thumbnails.default;
+                results.forEach(product => {
+                    // Use placeholder if no image provided yet
+                    const imgUrl = product.image || SITE_IMAGES.model_thumbnails.default;
+                    const displayColors = getColorsForYear(product, selectedYear);
+                    const colorsHtml = displayColors ? `<div class="prod-finishes">Available in: ${displayColors}</div>` : '';
 
-                grid.innerHTML += `
-                    <div class="product-card reveal active">
-                        <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
-                        <div class="prod-info">
-                            <div class="prod-cat" style="color: var(--whatsapp-green); font-weight: bold;">● In Stock in Store</div>
-                            <h4 class="prod-title">${productName}</h4>
-                            <div class="prod-price">Ask for Price</div>
-                            <div style="display:flex; gap:0.5rem">
-                                <button class="btn btn-whatsapp" style="width:100%; padding:0.8rem; font-size:0.9rem" 
-                                    onclick="enquireOnWhatsAppWithCar('${productName}', '${brand}', '${model} ${year}')">
-                                    Enquire on WhatsApp
-                                </button>
+                    grid.innerHTML += `
+                        <div class="product-card reveal active">
+                            <div class="in-stock-badge">In Stock in Store</div>
+                            <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
+                            <div class="prod-info">
+                                <h4 class="prod-title">${product.name}</h4>
+                                ${colorsHtml}
+                                <div class="prod-ask-price">Ask for Price</div>
+                                <div style="display:flex; gap:0.5rem">
+                                    <button class="btn btn-whatsapp" style="width:100%; padding:0.8rem; font-size:0.9rem" 
+                                        onclick="enquireOnWhatsAppWithCar('${product.name}', '${brand}', '${model} ${year}')">
+                                        Enquire on WhatsApp
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                });
             }
 
             // Scroll down a bit to show results
@@ -2829,53 +2961,71 @@
             const subheading = document.getElementById('results-subheading');
             const filterList = document.getElementById('results-filter-list');
 
-            heading.innerText = `${brand} ${model} (${year})`;
-            subheading.innerText = part ? `Showing results for "${part}"` : `Found 12 compatible parts in stock`;
+            // Filter Actual Inventory
+            const selectedYear = parseInt(year);
+            let results = window.INVENTORY.filter(product => {
+                const modelMatch = product.model === model ||
+                    (product.model === 'Land Cruiser' && model === 'Prado');
 
-            // Populate Filters (Mock)
+                return product.brand === brand &&
+                    modelMatch &&
+                    selectedYear >= product.yearStart &&
+                    selectedYear <= product.yearEnd;
+            });
+
+            if (part) {
+                results = results.filter(product => product.name.toLowerCase().includes(part.toLowerCase()));
+            }
+
+            heading.innerText = `${brand} ${model} (${year})`;
+            subheading.innerText = part ? `Showing results for "${part}"` : `Found ${results.length} compatible parts in stock`;
+
+            // Extract unique categories from results for the filters
+            const categories = [...new Set(results.map(p => p.category))];
+
+            // Populate Filters
             filterList.innerHTML = '';
-            ['Body Kits', 'Lighting', 'Suspension', 'Engine', 'Interior'].forEach(cat => {
+            categories.forEach(cat => {
                 filterList.innerHTML += `<li style="margin-bottom:0.5rem; cursor:pointer; color:var(--text-secondary)" onclick="this.style.color='var(--gold-primary)'">${cat}</li>`;
             });
 
-            // Populate Grid (Mock Products)
+            // Populate Grid
             grid.innerHTML = '';
-            // If part is specified, show fewer results to simulate filtering
-            const count = part ? 4 : 8;
 
-            for (let i = 1; i <= count; i++) {
-                const productName = part ? `${brand} ${model} ${part} #${i}` : `${brand} ${model} Part #${i}`;
-                const price = (200 * i).toString();
-                const fits = `${brand} ${model} ${year}`;
-                const qvData = JSON.stringify({
-                    name: productName,
-                    price: price,
-                    cat: part || 'Search Result',
-                    fits: fits
-                }).replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+            if (results.length === 0) {
+                grid.innerHTML = `<p style="color:var(--text-secondary); grid-column: 1 / -1;">No products found for this specific vehicle yet.</p>`;
+            } else {
+                results.forEach(product => {
+                    const imgUrl = product.image || SITE_IMAGES.model_thumbnails.default;
+                    const displayColors = getColorsForYear(product, selectedYear);
+                    const colorsHtml = displayColors ? `<div class="prod-finishes">Available in: ${displayColors}</div>` : '';
 
-                // Use placeholder thumbnail
-                const imgKey = 'product_00' + ((i % 3) + 1);
-                const imgUrl = SITE_IMAGES.products[imgKey] || SITE_IMAGES.model_thumbnails.default;
+                    const qvData = JSON.stringify({
+                        name: product.name,
+                        price: product.price || 'Ask',
+                        cat: product.category,
+                        fits: `${product.brand} ${product.model} ${year}`
+                    }).replace(/'/g, "&#39;").replace(/"/g, "&quot;");
 
-                grid.innerHTML += `
-                    <div class="product-card">
-                        <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
-                        <div class="prod-info">
-                            <div class="prod-cat">In Stock</div>
-                            <h4 class="prod-title">${productName}</h4>
-                            <div class="prod-price">QAR ${price}</div>
-                            <div style="display:flex; gap:0.5rem">
-                                <button class="btn btn-gold" style="flex:1; padding:0.5rem; font-size:0.8rem"
-                                    onclick='openQuickView(${qvData})'>View</button>
-                                <button class="btn btn-whatsapp" style="flex:1; padding:0.5rem; font-size:0.8rem" 
-                                    onclick="enquireOnWhatsAppWithCar('${productName}', '${brand}', '${model} ${year}')">
-                                    Chat
+                    grid.innerHTML += `
+                        <div class="product-card">
+                            <div class="in-stock-badge">In Stock in Store</div>
+                            <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
+                            <div class="prod-info">
+                                <h4 class="prod-title">${product.name}</h4>
+                                ${colorsHtml}
+                                <div class="prod-ask-price">Ask for Price</div>
+                                <button class="btn-whatsapp-catalog" 
+                                    onclick="enquireOnWhatsAppWithCar('${product.name}', '${brand}', '${model} ${year}')">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                                    </svg>
+                                    Enquire on WhatsApp
                                 </button>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                });
             }
 
             view.classList.add('active');
@@ -3056,9 +3206,9 @@
                 // Add listener for model change to enable year
                 modelSelect.onchange = () => {
                     if (modelSelect.value) {
-                        // Populate Years (Generic 2000-2025 for now)
+                        // Populate Years (Generic 1998-2025)
                         yearSelect.innerHTML = '<option value="">Select Year...</option>';
-                        for (let y = 2025; y >= 2000; y--) {
+                        for (let y = 2025; y >= 1998; y--) {
                             const opt = document.createElement('option');
                             opt.value = y;
                             opt.innerText = y;
@@ -3105,50 +3255,61 @@
             const subheading = document.getElementById('results-subheading');
             const filterList = document.getElementById('results-filter-list');
 
-            heading.innerText = `${brand} ${model} (${year})`;
-            subheading.innerText = `Found 12 compatible parts in stock`;
+            // Filter Actual Inventory for the selected brand, model, and year range
+            const selectedYear = parseInt(year);
+            const results = window.INVENTORY.filter(product => {
+                return product.brand === brand &&
+                    product.model === model &&
+                    selectedYear >= product.yearStart &&
+                    selectedYear <= product.yearEnd;
+            });
 
-            // Populate Filters (Mock)
+            heading.innerText = `${brand} ${model} (${year})`;
+            subheading.innerText = `Found ${results.length} compatible parts in stock`;
+
+            // Extract unique categories from results for the filters
+            const categories = [...new Set(results.map(p => p.category))];
+
+            // Populate Filters
             filterList.innerHTML = '';
-            ['Body Kits', 'Lighting', 'Suspension', 'Engine', 'Interior'].forEach(cat => {
+            categories.forEach(cat => {
                 filterList.innerHTML += `<li style="margin-bottom:0.5rem; cursor:pointer; color:var(--text-secondary)" onclick="this.style.color='var(--gold-primary)'">${cat}</li>`;
             });
 
-            // Populate Grid (Mock Products)
+            // Populate Grid
             grid.innerHTML = '';
-            for (let i = 1; i <= 8; i++) {
-                const productName = `${brand} ${model} Part #${i}`;
-                const price = (200 * i).toString();
-                const fits = `${brand} ${model} ${year}`;
-                const qvData = JSON.stringify({
-                    name: productName,
-                    price: price,
-                    cat: 'Search Result',
-                    fits: fits
-                }).replace(/'/g, "&#39;").replace(/"/g, "&quot;");
 
-                // Use placeholder thumbnail
-                const imgKey = 'product_00' + ((i % 3) + 1);
-                const imgUrl = SITE_IMAGES.products[imgKey] || SITE_IMAGES.model_thumbnails.default;
+            if (results.length === 0) {
+                grid.innerHTML = `<p style="color:var(--text-secondary); grid-column: 1 / -1;">No products found for this specific vehicle yet.</p>`;
+            } else {
+                results.forEach(product => {
+                    const imgUrl = product.image || SITE_IMAGES.model_thumbnails.default;
+                    const qvData = JSON.stringify({
+                        name: product.name,
+                        price: product.price || 'Ask',
+                        cat: product.category,
+                        fits: `${product.brand} ${product.model} ${year}`
+                    }).replace(/'/g, "&#39;").replace(/"/g, "&quot;");
 
-                grid.innerHTML += `
-                    <div class="product-card">
-                        <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
-                        <div class="prod-info">
-                            <div class="prod-cat">In Stock</div>
-                            <h4 class="prod-title">${productName}</h4>
-                            <div class="prod-price">QAR ${price}</div>
-                            <div style="display:flex; gap:0.5rem">
-                                <button class="btn btn-gold" style="flex:1; padding:0.5rem; font-size:0.8rem"
-                                    onclick='openQuickView(${qvData})'>View</button>
-                                <button class="btn btn-whatsapp" style="flex:1; padding:0.5rem; font-size:0.8rem" 
-                                    onclick="enquireOnWhatsAppWithCar('${productName}', '${brand}', '${model} ${year}')">
-                                    Chat
+                    grid.innerHTML += `
+                        <div class="product-card">
+                            <div class="in-stock-badge">In Stock in Store</div>
+                            <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
+                            <div class="prod-info">
+                                <h4 class="prod-title">${product.name}</h4>
+                                <div class="prod-finishes">Available in: ${product.finishes}</div>
+                                <div class="prod-ask-price">Ask for Price</div>
+                                <button class="btn-whatsapp-catalog" 
+                                    onclick="enquireOnWhatsAppWithCar('${product.name}', '${brand}', '${model} ${year}')">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                                    </svg>
+                                    Enquire on WhatsApp
                                 </button>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                });
             }
 
             view.classList.add('active');
@@ -3212,7 +3373,7 @@
             const nav = document.getElementById('brand-tabs-nav');
             const brands = Object.keys(carData);
 
-            // Create Tabs
+            // Create Cards
             brands.forEach((brand, index) => {
                 const btn = document.createElement('button');
                 btn.className = `tab-btn ${index === 0 ? 'active' : ''}`;
@@ -3226,7 +3387,7 @@
         }
 
         function switchBrandTab(brand) {
-            // Update Buttons
+            // Update Cards Active State
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 if (btn.innerText === brand) btn.classList.add('active');
                 else btn.classList.remove('active');
@@ -3238,38 +3399,37 @@
             // Re-using product card logic but simplified for tabs
             // Generate some dummy products for this brand
             let productsHtml = '';
-            for (let i = 1; i <= 4; i++) {
-                const productName = `${brand} Part #${i}`;
-                const price = (150 * i).toString();
-                const qvData = JSON.stringify({
-                    name: productName,
-                    price: price,
-                    cat: 'Recommended',
-                    fits: brand
-                }).replace(/'/g, "&#39;").replace(/"/g, "&quot;");
+            const brandProducts = window.INVENTORY.filter(p => p.brand === brand);
+            const displayProducts = brandProducts.slice(0, 3); // Max 3 for tab preview
 
-                // Use placeholder thumbnail
-                const imgKey = 'product_00' + ((i % 3) + 1); // Cycle 1-3
-                const imgUrl = SITE_IMAGES.products[imgKey] || SITE_IMAGES.model_thumbnails.default;
+            if (displayProducts.length === 0) {
+                productsHtml = `<p style="color:var(--text-secondary); width: 100%; text-align: center;">New parts arriving soon.</p>`;
+            } else {
+                displayProducts.forEach((product) => {
+                    const imgUrl = product.image || SITE_IMAGES.model_thumbnails.default;
+                    const currentYear = new Date().getFullYear();
+                    const displayColors = getColorsForYear(product, currentYear);
+                    const colorsHtml = displayColors ? `<div class="prod-finishes">Available in: ${displayColors}</div>` : '';
 
-                productsHtml += `
-                    <div class="product-card">
-                        <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
-                        <div class="prod-info">
-                            <div class="prod-cat">Recommended</div>
-                            <h4 class="prod-title">${productName}</h4>
-                            <div class="prod-price">QAR ${price}</div>
-                            <div style="display:flex; gap:0.5rem">
-                                <button class="btn btn-gold" style="flex:1; padding:0.5rem; font-size:0.8rem"
-                                    onclick='openQuickView(${qvData})'>Quick View</button>
-                                <button class="btn btn-whatsapp" style="flex:1; padding:0.5rem; font-size:0.8rem" 
-                                    onclick="enquireOnWhatsAppWithCar('${productName}', '${brand}', 'General Model')">
-                                    WhatsApp
+                    productsHtml += `
+                        <div class="product-card">
+                            <div class="in-stock-badge">In Stock in Store</div>
+                            <div class="prod-img" style="background-image: url('${imgUrl}')"></div>
+                            <div class="prod-info">
+                                <h4 class="prod-title">${product.name}</h4>
+                                ${colorsHtml}
+                                <div class="prod-ask-price">Ask for Price</div>
+                                <button class="btn-whatsapp-catalog" 
+                                    onclick="enquireOnWhatsAppWithCar('${product.name}', '${brand}', 'General Model')">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                                    </svg>
+                                    Enquire on WhatsApp
                                 </button>
                             </div>
                         </div>
-                    </div>
-                `;
+                    `;
+                });
             }
 
             container.innerHTML = `
