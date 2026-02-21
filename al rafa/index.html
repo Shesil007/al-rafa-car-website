@@ -1404,8 +1404,28 @@
         }
 
         .testimonials-section {
-            padding: 7rem 5%;
+            padding: 4rem 5%;
+            /* Reduced padding from 7rem to 4rem */
             background-color: var(--navy-secondary);
+            overflow: hidden;
+            /* Prevent horizontal scrollbar on the whole section */
+        }
+
+        .testimonials-scroll-container {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            padding-bottom: 2rem;
+            /* Give some space for the scrollbar */
+            scroll-snap-type: x mandatory;
+
+            /* Hide scrollbar for cleaner look, but keep functionality */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .testimonials-scroll-container::-webkit-scrollbar {
+            display: none;
         }
 
         .testimonial-card {
@@ -1415,6 +1435,11 @@
             border: 1px solid var(--navy-primary);
             position: relative;
             margin-bottom: 1rem;
+
+            /* Sizing for the horizontal scroll */
+            flex: 0 0 300px;
+            /* Fixed width for cards */
+            scroll-snap-align: start;
         }
 
         .quote-icon {
@@ -2108,31 +2133,67 @@
         </section>
 
         <!-- Testimonials -->
-        <section id="testimonials" class="testimonials-section">
-            <div class="section-header reveal">
+        <section id="testimonials" class="testimonials-section" style="padding: 2rem 5% 1rem 5%;">
+            <div class="section-header reveal" style="margin-bottom: 2rem;">
                 <h2>What Enthusiasts Say</h2>
             </div>
-            <div class="results-grid reveal">
+
+            <div class="testimonials-scroll-container reveal">
+                <!-- Testimonial 1 -->
                 <div class="testimonial-card">
                     <div class="quote-icon">❝</div>
-                    <p class="text-secondary" style="margin-bottom:1rem">"Found the exact lift kit for my Patrol waiting
-                        for me. Best prices in Doha hands down."</p>
+                    <p class="text-secondary" style="margin-bottom:1rem; font-style: italic;">"Changed whole body kit of
+                        my Land Cruiser and it was fabulous. The fitment is perfect and looks completely original."</p>
                     <h4 class="text-gold">Mohammed Al-Thani</h4>
-                    <p style="font-size:0.8rem">Nissan Patrol Owner</p>
+                    <p style="font-size:0.8rem">Toyota Land Cruiser LC300 Owner</p>
                 </div>
+
+                <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <div class="quote-icon">❝</div>
-                    <p class="text-secondary" style="margin-bottom:1rem">"Their WhatsApp service is instant. Confirmed
-                        the part, paid, and picked it up same day."</p>
+                    <p class="text-secondary" style="margin-bottom:1rem; font-style: italic;">"Upgraded the head lights
+                        and back lights on my Patrol here. The difference is night and day, flawless installation."</p>
                     <h4 class="text-gold">Ahmed K.</h4>
+                    <p style="font-size:0.8rem">Nissan Patrol Nismo Owner</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">❝</div>
+                    <p class="text-secondary" style="margin-bottom:1rem; font-style: italic;">"Stopped by to change the
+                        battery on my Land Cruiser before a desert trip. Quick, professional, and genuine parts."</p>
+                    <h4 class="text-gold">Sarah H.</h4>
+                    <p style="font-size:0.8rem">Toyota Land Cruiser VXR Owner</p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">❝</div>
+                    <p class="text-secondary" style="margin-bottom:1rem; font-style: italic;">"Found the exact
+                        suspension lift kit for my Patrol waiting for me. Best prices for genuine Nissan parts in Doha
+                        hands down."</p>
+                    <h4 class="text-gold">Khalid Salem</h4>
+                    <p style="font-size:0.8rem">Nissan Patrol Safari Owner</p>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card">
+                    <div class="quote-icon">❝</div>
+                    <p class="text-secondary" style="margin-bottom:1rem; font-style: italic;">"Genuine parts only. I
+                        don't trust anyone else with my high-end vehicles. Always top tier service for my Land Cruiser."
+                    </p>
+                    <h4 class="text-gold">Omar Al-Kuwari</h4>
                     <p style="font-size:0.8rem">Toyota Land Cruiser Owner</p>
                 </div>
+
+                <!-- Testimonial 6 -->
                 <div class="testimonial-card">
                     <div class="quote-icon">❝</div>
-                    <p class="text-secondary" style="margin-bottom:1rem">"Genuine parts only. I don't trust anyone else
-                        with my Lexus."</p>
-                    <h4 class="text-gold">Sarah J.</h4>
-                    <p style="font-size:0.8rem">Lexus LX570 Owner</p>
+                    <p class="text-secondary" style="margin-bottom:1rem; font-style: italic;">"Their WhatsApp service is
+                        instant. Confirmed the Patrol Nismo body kit parts, paid, and got it installed the same week."
+                    </p>
+                    <h4 class="text-gold">Fahad Al-Marri</h4>
+                    <p style="font-size:0.8rem">Nissan Patrol Platinum Owner</p>
                 </div>
             </div>
         </section>
