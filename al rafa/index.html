@@ -1793,9 +1793,9 @@
         <div class="nav-logo">Al Rafa <span>Car Accessories</span></div>
         <div class="nav-links">
             <a href="#hero" data-i18n="home">Home</a>
-            <a href="#brands" data-i18n="brands">Specialist Brands</a>
-            <a href="#essentials">Car Care</a>
             <a href="#search" data-i18n="search">Find Parts</a>
+            <a href="#essentials">Car Care</a>
+            <a href="#brands" data-i18n="brands">Specialist Brands</a>
             <a href="#about" data-i18n="about">About Us</a>
             <a href="#contact" data-i18n="contact">Contact</a>
         </div>
@@ -1818,8 +1818,8 @@
             <button class="mobile-menu-btn" style="align-self: flex-end;" onclick="toggleMobileMenu()">✕</button>
             <a href="#hero" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="home">Home</a>
             <a href="#search" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="search">Find Parts</a>
-            <a href="#brands" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="brands">Brands</a>
             <a href="#essentials" class="mobile-nav-link" onclick="toggleMobileMenu()">Car Care</a>
+            <a href="#brands" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="brands">Brands</a>
             <a href="#about" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="about">About Us</a>
             <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="contact">Contact</a>
             <button class="lang-btn" onclick="toggleLanguage(); toggleMobileMenu()">Switch to Arabic</button>
@@ -1961,8 +1961,6 @@
                 <!-- Content Populated by JS -->
             </div>
         </section>
-        </div>
-        </section>
 
         <!-- Car Care & Essentials -->
         <section id="essentials" class="brands-section" style="background-color: var(--navy-primary);">
@@ -2033,8 +2031,8 @@
         </section>
 
         <!-- Part Request Form -->
-        <section id="request-part" class="request-section">
-            <div class="section-header reveal">
+        <section id="request-part" class="request-section" style="padding: 4rem 5%;">
+            <div class="section-header reveal" style="margin-bottom: 2rem;">
                 <h2>Can't Find Your Part?</h2>
                 <p class="text-secondary">Tell us what you need and we'll source it for you — guaranteed.</p>
             </div>
@@ -2074,28 +2072,26 @@
             </div>
         </section>
 
-        <section id="about" class="gallery-section">
-            <div class="section-header reveal">
-                <h2>Our Story</h2>
+        <section id="about" class="gallery-section" style="padding: 4rem 5%;">
+            <div class="section-header reveal" style="margin-bottom: 2rem;">
+                <h2>Our Story & Legacy</h2>
             </div>
             <div class="reveal"
                 style="max-width: 800px; margin: 0 auto; text-align: center; line-height: 1.8; color: var(--text-secondary);">
                 <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
-                    For over 24 years, we have been one of Doha's most trusted destinations for genuine car accessories
-                    and parts.
-                    What started as a passion for automobiles has grown into a legacy built on reliability, expertise,
-                    and an unwavering commitment to quality.
+                    Founded in 2002, Al Rafa Car Accessories began with a profound passion for iconic 4x4s like the
+                    Toyota Land Cruiser and Nissan Patrol. Today, we stand as pioneers in Doha's automotive scene,
+                    having forged a 24-year legacy built on uncompromised reliability, elite craftsmanship, and
+                    deep-rooted expertise.
                 </p>
                 <p style="margin-bottom: 1.5rem; font-size: 1.1rem;">
-                    Having proudly served more than 5,000 customers across Qatar, we understand that when it comes to
-                    your vehicle,
-                    nothing less than the best will do. That's why every product we supply is 100% genuine — no
-                    compromises, no shortcuts.
+                    Having proudly upgraded and customized vehicles for over 5,000 enthusiasts across Qatar, we
+                    recognize that true performance demands perfection. That's why our heritage is anchored in supplying
+                    only 100% genuine parts — with absolutely no shortcuts.
                 </p>
                 <p style="font-size: 1.1rem; color: var(--gold-primary); font-weight: 500;">
-                    Our customers keep coming back not just for our parts, but for the peace of mind that comes with
-                    every purchase.
-                    At our store, your satisfaction isn't just a goal — it's our standard.
+                    We don't just sell accessories; we uphold a multi-generational legacy of trust. At our showroom,
+                    your peace of mind and satisfaction remain our ultimate standard.
                 </p>
             </div>
         </section>
@@ -2281,6 +2277,7 @@
         <div class="footer-links">
             <a href="#hero">Home</a>
             <a href="#search">Find Parts</a>
+            <a href="#essentials">Car Care</a>
             <a href="#brands">Brands</a>
             <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
@@ -3070,7 +3067,7 @@
                 return;
             }
 
-            const message = `Hi Al Rafa! 👋 My name is *${name}* and I'm looking for a part for my *${brand} ${model}*.\n\n🔧 *Part Required:* ${part}\n📝 *Additional Notes:* ${notes || 'None'}\n\nCould you please help me source this part? Thank you!`;
+            const message = `Hi Al Rafa! My name is *${name}* and I'm looking for a part for my *${brand} ${model}*.\n\n*Part Required:* ${part}\n*Additional Notes:* ${notes || 'None'}\n\nCould you please help me source this part? Thank you!`;
             window.open(`https://wa.me/97430496000?text=${encodeURIComponent(message)}`, '_blank');
         }
 
@@ -3344,11 +3341,11 @@
         // 💬 WHATSAPP HELPERS
         // ============================================================
         function enquireOnWhatsApp(message) {
-            window.open(`https://wa.me/97430496000?text=${encodeURIComponent('Hi Al Rafa! 👋 ' + message)}`, '_blank');
+            window.open(`https://wa.me/97430496000?text=${encodeURIComponent('Hi Al Rafa! ' + message)}`, '_blank');
         }
 
         function enquireOnWhatsAppWithCar(productName, brand, carDetails) {
-            const message = `Hi Al Rafa! 👋\n\nI am interested in the following product:\n📦 *${productName}*\n🚗 *For my ${carDetails}*\n\nIs it available and what is the price?`;
+            const message = `Hi Al Rafa!\n\nI am interested in the following product:\n*${productName}*\n*For my ${carDetails}*\n\nIs it available and what is the price?`;
             window.open(`https://wa.me/97430496000?text=${encodeURIComponent(message)}`, '_blank');
         }
 
