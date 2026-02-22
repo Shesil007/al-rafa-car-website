@@ -272,5 +272,150 @@ window.INVENTORY = [
         finishes: 'Rubber All-Weather / Premium Carpet',
         image: 'images/LC floor mats all years.webp',
         inStock: true
+    },
+
+    // ===== NISSAN PATROL =====
+    {
+        id: 'np-001',
+        name: 'Nissan Patrol Front Bumper',
+        brand: 'Nissan',
+        category: 'Body Parts',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-002',
+        name: 'Nissan Patrol Back Bumper',
+        brand: 'Nissan',
+        category: 'Body Parts',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-003',
+        name: 'Nissan Patrol Grills',
+        brand: 'Nissan',
+        category: 'Body Parts',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-004',
+        name: 'Nissan Patrol Body Sticker',
+        brand: 'Nissan',
+        category: 'Accessories',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-005',
+        name: 'Nissan Patrol Multimedia Player',
+        brand: 'Nissan',
+        category: 'Electronics',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-006',
+        name: 'Nissan Patrol Steering Wheel',
+        brand: 'Nissan',
+        category: 'Interior',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-007',
+        name: 'Nissan Patrol Head Light',
+        brand: 'Nissan',
+        category: 'Lighting',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-008',
+        name: 'Nissan Patrol Back Light',
+        brand: 'Nissan',
+        category: 'Lighting',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-009',
+        name: 'Nissan Patrol Sound System',
+        brand: 'Nissan',
+        category: 'Electronics',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-010',
+        name: 'Nissan Patrol Mud Flap',
+        brand: 'Nissan',
+        category: 'Exterior',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-011',
+        name: 'Nissan Patrol Battery',
+        brand: 'Nissan',
+        category: 'Engine Parts',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-012',
+        name: 'Nissan Patrol Seat Cover',
+        brand: 'Nissan',
+        category: 'Interior',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
+    },
+    {
+        id: 'np-013',
+        name: 'Nissan Patrol Floor Mat',
+        brand: 'Nissan',
+        category: 'Interior',
+        model: 'Patrol',
+        yearStart: 2010,
+        yearEnd: 2022,
+        image: '',
+        inStock: true
     }
 ];
