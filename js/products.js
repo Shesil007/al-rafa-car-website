@@ -150,7 +150,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'Chrome / Matte Black / TRD Style',
-        image: '',
+        image: 'images/LC front grill all years.webp',
         inStock: true
     },
     {
@@ -174,7 +174,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'OEM Graphics / Custom Decals',
-        image: '',
+        image: 'images/LC body sticker all year.webp',
         inStock: true
     },
     {
@@ -186,7 +186,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'LED / Halogen / Smoked Lens',
-        image: '',
+        image: 'images/LC Head light all model.webp',
         inStock: true
     },
     {
@@ -210,7 +210,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'Premium Audio Upgrade',
-        image: '',
+        image: 'images/LC sound system all years.webp',
         inStock: true
     },
     {
@@ -222,7 +222,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'Tesla Style / Android Auto / Apple CarPlay',
-        image: '',
+        image: 'images/LC multimedial player for all years.webp',
         inStock: true
     },
     {
@@ -234,7 +234,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'AGM / Lead Acid High Performance',
-        image: '',
+        image: 'images/Lc car battery all years.webp',
         inStock: true
     },
     {
@@ -270,7 +270,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'Rubber All-Weather / Premium Carpet',
-        image: '',
+        image: 'images/LC floor mats all years.webp',
         inStock: true
     }
 ];
