@@ -198,7 +198,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'LED / Sequential / OEM Style',
-        image: '',
+        image: 'images/LC back light og.webp',
         inStock: true
     },
     {
@@ -246,7 +246,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'Black / OEM Style / TRD Branded',
-        image: '',
+        image: 'images/LC mud flaps all years.webp',
         inStock: true
     },
     {
@@ -258,7 +258,7 @@ window.INVENTORY = [
         yearStart: 1998,
         yearEnd: 2025,
         finishes: 'Leather / Fabric / Custom Stitching',
-        image: '',
+        image: 'images/LC seat cover all years.png',
         inStock: true
     },
     {
