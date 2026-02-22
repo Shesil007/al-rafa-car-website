@@ -2023,8 +2023,8 @@
             <div class="hero-content reveal" id="hero-text">
                 <h1 class="hero-title">Your Ride. Your Pride. <br> <span class="text-gold">Everything It Needs.</span>
                 </h1>
-                <p class="hero-subtitle">Specialists in <span class="text-gold">Toyota • Nissan • Lexus • Chevrolet •
-                        Jeep • Volkswagen</span></p>
+                <p class="hero-subtitle">Specialists in <span class="text-gold">Land Cruiser • Patrol • Lexus LX</span>
+                </p>
 
                 <div class="hero-ctas">
                     <a href="#search" class="btn btn-gold">Shop Now</a>
@@ -2051,10 +2051,166 @@
             </div>
         </div>
 
-        <!-- 5-Step Visual Search -->
+        <!-- ===== PREMIUM VEHICLE SHOWCASE ===== -->
+        <style>
+            .vehicle-showcase {
+                padding: 5rem 5%;
+                background: linear-gradient(180deg, var(--navy-primary) 0%, #0a1628 100%);
+            }
+
+            .vehicle-cards-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .vehicle-card {
+                border-radius: 16px;
+                overflow: hidden;
+                background: var(--card-bg);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+                border: 1px solid rgba(196, 160, 80, 0.08);
+                transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .vehicle-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 24px 52px rgba(196, 160, 80, 0.2);
+                border-color: rgba(196, 160, 80, 0.4);
+            }
+
+            .vehicle-card-img {
+                width: 100%;
+                height: 230px;
+                background-size: cover;
+                background-position: center;
+                background-color: #0d1f3c;
+                transition: transform 0.5s ease;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .vehicle-card:hover .vehicle-card-img {
+                transform: scale(1.04);
+            }
+
+            .vehicle-card-body {
+                padding: 1.6rem;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+
+            .vehicle-card-badge {
+                display: inline-block;
+                background: rgba(196, 160, 80, 0.15);
+                color: var(--gold-primary);
+                border: 1px solid rgba(196, 160, 80, 0.3);
+                font-size: 0.68rem;
+                font-weight: 700;
+                letter-spacing: 0.12em;
+                padding: 0.2rem 0.7rem;
+                border-radius: 20px;
+                text-transform: uppercase;
+                margin-bottom: 0.7rem;
+                width: fit-content;
+            }
+
+            .vehicle-card-name {
+                font-size: 1.5rem;
+                font-weight: 800;
+                color: #fff;
+                margin: 0 0 0.5rem;
+                line-height: 1.15;
+            }
+
+            .vehicle-card-desc {
+                font-size: 0.87rem;
+                color: var(--text-secondary);
+                margin: 0 0 1.4rem;
+                line-height: 1.6;
+                flex-grow: 1;
+            }
+
+            .vehicle-card-btn {
+                display: inline-block;
+                background: var(--gold-primary);
+                color: var(--navy-primary);
+                font-weight: 700;
+                font-size: 0.85rem;
+                padding: 0.65rem 1.5rem;
+                border-radius: 7px;
+                text-decoration: none;
+                letter-spacing: 0.04em;
+                transition: background 0.2s, transform 0.2s;
+                width: fit-content;
+            }
+
+            .vehicle-card-btn:hover {
+                background: var(--gold-light, #e8c96a);
+                transform: scale(1.04);
+            }
+        </style>
+
+        <section class="vehicle-showcase">
+            <div class="section-header reveal" style="margin-bottom: 3rem;">
+                <h2>Our Specialist Vehicles</h2>
+                <p class="text-secondary">We live and breathe these machines. Genuine parts, expert knowledge, unmatched
+                    service.</p>
+            </div>
+            <div class="vehicle-cards-grid">
+
+                <!-- Toyota Land Cruiser -->
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-card-img" style="background-image: url('images/Land cruiser im.webp');">
+                    </div>
+                    <div class="vehicle-card-body">
+                        <span class="vehicle-card-badge">Toyota</span>
+                        <h3 class="vehicle-card-name">Land Cruiser</h3>
+                        <p class="vehicle-card-desc">From bumpers to interiors — 13 genuine part categories in stock for
+                            every generation, 1998 to 2026.</p>
+                        <a href="#search" class="vehicle-card-btn">Find Parts →</a>
+                    </div>
+                </div>
+
+                <!-- Nissan Patrol -->
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-card-img" style="background-image: url('images/nissan patrol image.webp');">
+                    </div>
+                    <div class="vehicle-card-body">
+                        <span class="vehicle-card-badge">Nissan</span>
+                        <h3 class="vehicle-card-name">Patrol</h3>
+                        <p class="vehicle-card-desc">Qatar's most iconic 4x4. Genuine Patrol parts stocked from 1998 to
+                            the latest models, ready to go.</p>
+                        <a href="#search" class="vehicle-card-btn">Find Parts →</a>
+                    </div>
+                </div>
+
+                <!-- Lexus LX -->
+                <div class="vehicle-card reveal">
+                    <div class="vehicle-card-img" style="background-image: url('images/Lexus lx image.webp');">
+                    </div>
+                    <div class="vehicle-card-body">
+                        <span class="vehicle-card-badge">Lexus</span>
+                        <h3 class="vehicle-card-name">LX</h3>
+                        <p class="vehicle-card-desc">Premium luxury SUV parts for the LX 570 and LX 600 — expertly
+                            sourced and delivered fast across Doha.</p>
+                        <a href="#search" class="vehicle-card-btn">Find Parts →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ===== END VEHICLE SHOWCASE ===== -->
+
+
         <!-- =========================================
-           8. CENTRAL SEARCH BAR (Redesigned)
-           ========================================= -->
+        8. CENTRAL SEARCH BAR (Redesigned)
+        ========================================= -->
         <section id="search" class="search-bar-section">
             <div class="search-box reveal">
                 <h2 class="text-beige"><span style="color:var(--gold-primary)">Find</span> Your Parts</h2>
