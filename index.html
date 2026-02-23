@@ -2922,14 +2922,15 @@
                 // Add listener for model change to enable year
                 modelSelect.onchange = () => {
                     if (modelSelect.value) {
-                        // Populate Years (1998 to 2025)
+                        // Populate Years from carData for the selected model
                         yearSelect.innerHTML = '<option value="">Select Year...</option>';
-                        for (let y = 2025; y >= 1998; y--) {
+                        const modelYears = carData[brand].models[modelSelect.value]?.years || [];
+                        [...modelYears].reverse().forEach(y => {
                             const opt = document.createElement('option');
                             opt.value = y;
                             opt.innerText = y;
                             yearSelect.appendChild(opt);
-                        }
+                        });
                         yearSelect.disabled = false;
                         yearWrapper.classList.remove('disabled');
                     } else {
@@ -3290,14 +3291,15 @@
                 // Add listener for model change to enable year
                 modelSelect.onchange = () => {
                     if (modelSelect.value) {
-                        // Populate Years (Generic 1998-2025)
+                        // Populate Years from carData for the selected model
                         yearSelect.innerHTML = '<option value="">Select Year...</option>';
-                        for (let y = 2025; y >= 1998; y--) {
+                        const modelYears = carData[brand]?.models[modelSelect.value]?.years || [];
+                        [...modelYears].reverse().forEach(y => {
                             const opt = document.createElement('option');
                             opt.value = y;
                             opt.innerText = y;
                             yearSelect.appendChild(opt);
-                        }
+                        });
                         yearSelect.disabled = false;
                         yearWrapper.classList.remove('disabled');
                     } else {
