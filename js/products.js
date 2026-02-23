@@ -276,25 +276,51 @@ window.INVENTORY = [
 
     // ===== NISSAN PATROL =====
     {
-        id: 'np-001',
+        id: 'np-001a',
         name: 'Nissan Patrol Front Bumper',
         brand: 'Nissan',
         category: 'Body Parts',
         model: 'Patrol',
         yearStart: 2010,
-        yearEnd: 2022,
-        image: '',
+        yearEnd: 2019,
+        availableColors: { "2010-2019": "Pearl White / Black" },
+        image: 'images/Nissan patrol 10 to 19 front bumper.webp',
         inStock: true
     },
     {
-        id: 'np-002',
+        id: 'np-001b',
+        name: 'Nissan Patrol Front Bumper',
+        brand: 'Nissan',
+        category: 'Body Parts',
+        model: 'Patrol',
+        yearStart: 2020,
+        yearEnd: 2022,
+        availableColors: { "2020-2022": "Pearl White / Black" },
+        image: 'images/Nissan Patrol 2020 to 2022 front bumper.webp',
+        inStock: true
+    },
+    {
+        id: 'np-002a',
         name: 'Nissan Patrol Back Bumper',
         brand: 'Nissan',
         category: 'Body Parts',
         model: 'Patrol',
         yearStart: 2010,
+        yearEnd: 2019,
+        availableColors: { "2010-2019": "Pearl White / Black" },
+        image: 'images/Nissan Patrol 2010 to 2019 Back bumper.webp',
+        inStock: true
+    },
+    {
+        id: 'np-002b',
+        name: 'Nissan Patrol Back Bumper',
+        brand: 'Nissan',
+        category: 'Body Parts',
+        model: 'Patrol',
+        yearStart: 2020,
         yearEnd: 2022,
-        image: '',
+        availableColors: { "2020-2022": "Pearl White / Black" },
+        image: 'images/Nissan Patrol back bumper 2020 to 2022 (1).webp',
         inStock: true
     },
     {
@@ -305,7 +331,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/Nissan Patrol front grill.webp',
         inStock: true
     },
     {
@@ -316,7 +342,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/nissan patrol body sticker og.png',
         inStock: true
     },
     {
@@ -327,7 +353,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/nissan Patrol multimedia player.jpg',
         inStock: true
     },
     {
@@ -338,7 +364,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/Nissan Patrol steering wheel.png',
         inStock: true
     },
     {
@@ -349,7 +375,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/Nissan patrol front light.png',
         inStock: true
     },
     {
@@ -360,7 +386,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/nissan Patrol back light.png',
         inStock: true
     },
     {
@@ -371,7 +397,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/LC sound system all years.webp',
         inStock: true
     },
     {
@@ -382,7 +408,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/LC mud flaps all years.webp',
         inStock: true
     },
     {
@@ -393,7 +419,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/Lc car battery all years.webp',
         inStock: true
     },
     {
@@ -404,7 +430,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/LC seat cover all years.png',
         inStock: true
     },
     {
@@ -415,7 +441,7 @@ window.INVENTORY = [
         model: 'Patrol',
         yearStart: 2010,
         yearEnd: 2022,
-        image: '',
+        image: 'images/LC floor mats all years.webp',
         inStock: true
     }
 ];
