@@ -443,5 +443,130 @@ window.INVENTORY = [
         yearEnd: 2022,
         image: 'images/LC floor mats all years.webp',
         inStock: true
+    },
+
+    // ===== LEXUS LX 570 =====
+    {
+        id: 'llx-001',
+        name: 'Lexus LX 570 Front Bumper',
+        brand: 'Lexus',
+        category: 'Body Parts',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        availableColors: { '2008-2023': 'All Factory Colors Available' },
+        image: 'images/LC 08 to 11 front bumper.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-002',
+        name: 'Lexus LX 570 Back Bumper',
+        brand: 'Lexus',
+        category: 'Body Parts',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        availableColors: { '2008-2023': 'All Factory Colors Available' },
+        image: 'images/LC 08 to 11 back bumper.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-003',
+        name: 'Lexus LX 570 Grills',
+        brand: 'Lexus',
+        category: 'Body Parts',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/lexus front grills.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-004',
+        name: 'Lexus LX 570 Head Light',
+        brand: 'Lexus',
+        category: 'Lighting',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/lexus front light og.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-005',
+        name: 'Lexus LX 570 Back Light',
+        brand: 'Lexus',
+        category: 'Lighting',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/lexus back light.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-006',
+        name: 'Lexus LX 570 Multimedia Player',
+        brand: 'Lexus',
+        category: 'Electronics',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/LC multimedial player for all years.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-007',
+        name: 'Lexus LX 570 Sound System',
+        brand: 'Lexus',
+        category: 'Electronics',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/LC sound system all years.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-008',
+        name: 'Lexus LX 570 Mudflap',
+        brand: 'Lexus',
+        category: 'Exterior',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/LC mud flaps all years.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-009',
+        name: 'Lexus LX 570 Car Battery',
+        brand: 'Lexus',
+        category: 'Engine Parts',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/Lc car battery all years.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-010',
+        name: 'Lexus LX 570 Seat Cover',
+        brand: 'Lexus',
+        category: 'Interior',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/LC seat cover all years.png',
+        inStock: true
+    },
+    {
+        id: 'llx-011',
+        name: 'Lexus LX 570 Floor Mats',
+        brand: 'Lexus',
+        category: 'Interior',
+        model: 'LX 570',
+        yearStart: 2008,
+        yearEnd: 2023,
+        image: 'images/LC floor mats all years.webp',
+        inStock: true
     }
 ];
