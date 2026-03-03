@@ -1028,6 +1028,49 @@
             background-color: #000;
         }
 
+        /* ===== MOBILE: 2-column product grid ===== */
+        @media (max-width: 600px) {
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.75rem;
+            }
+
+            .prod-img {
+                height: 140px;
+            }
+
+            .prod-info {
+                padding: 0.75rem;
+            }
+
+            .prod-title {
+                font-size: 0.82rem;
+                min-height: 2.5rem;
+                margin-bottom: 4px;
+            }
+
+            .prod-finishes {
+                font-size: 0.7rem;
+                margin-bottom: 6px;
+            }
+
+            .prod-ask-price {
+                font-size: 0.8rem;
+                margin-bottom: 6px;
+            }
+
+            .btn-whatsapp,
+            .btn-whatsapp-catalog {
+                font-size: 0.72rem;
+                padding: 0.55rem 0.4rem;
+            }
+
+            .in-stock-badge {
+                font-size: 0.6rem;
+                padding: 0.2rem 0.5rem;
+            }
+        }
+
         .in-stock-badge {
             position: absolute;
             top: 1rem;
@@ -1983,7 +2026,6 @@
         <div class="nav-links">
             <a href="#hero" data-i18n="home">Home</a>
             <a href="#search" data-i18n="search">Find Parts</a>
-            <a href="#essentials">Car Care</a>
             <a href="#brands" data-i18n="brands">Specialist Brands</a>
             <a href="#about" data-i18n="about">About Us</a>
             <a href="#contact" data-i18n="contact">Contact</a>
@@ -2007,7 +2049,6 @@
             <button class="mobile-menu-btn" style="align-self: flex-end;" onclick="toggleMobileMenu()">✕</button>
             <a href="#hero" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="home">Home</a>
             <a href="#search" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="search">Find Parts</a>
-            <a href="#essentials" class="mobile-nav-link" onclick="toggleMobileMenu()">Car Care</a>
             <a href="#brands" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="brands">Brands</a>
             <a href="#about" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="about">About Us</a>
             <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu()" data-i18n="contact">Contact</a>
@@ -2559,7 +2600,6 @@
         <div class="footer-links">
             <a href="#hero">Home</a>
             <a href="#search">Find Parts</a>
-            <a href="#essentials">Car Care</a>
             <a href="#brands">Brands</a>
             <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
