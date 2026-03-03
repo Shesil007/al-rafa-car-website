@@ -2067,7 +2067,7 @@
                 <p class="hero-subtitle">Specialists in <span class="text-gold">Land Cruiser • Patrol • Lexus LX</span>
                 </p>
 
-                <div class="hero-ctas">
+                <div class="hero-ctas" style="display:flex; gap:1rem; flex-wrap:wrap;">
                     <a href="#search" class="btn btn-gold">Shop Now</a>
                     <button class="btn btn-whatsapp" onclick="enquireOnWhatsApp('Hero Enquiry')">Chat on
                         WhatsApp</button>
@@ -3610,7 +3610,8 @@
         // 💬 WHATSAPP HELPERS
         // ============================================================
         function enquireOnWhatsApp(message) {
-            window.open(`https://wa.me/97430496000?text=${encodeURIComponent('Hi Al Rafa! ' + message)}`, '_blank');
+            const prefilledMsg = 'Hi Al Rafa Car Accessories, I would like to enquire about your products and pricing. Kindly assist';
+            window.open(`https://wa.me/97430496000?text=${encodeURIComponent(prefilledMsg)}`, '_blank');
         }
 
         function enquireOnWhatsAppWithCar(productName, brand, carDetails) {
