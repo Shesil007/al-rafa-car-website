@@ -447,27 +447,51 @@ window.INVENTORY = [
 
     // ===== LEXUS LX 570 =====
     {
-        id: 'llx-001',
+        id: 'llx-001a',
         name: 'Lexus LX 570 Front Bumper',
         brand: 'Lexus',
         category: 'Body Parts',
         model: 'LX 570',
-        yearStart: 2008,
-        yearEnd: 2023,
-        availableColors: { '2008-2023': 'All Factory Colors Available' },
-        image: 'images/LC 08 to 11 front bumper.webp',
+        yearStart: 2012,
+        yearEnd: 2016,
+        availableColors: { '2012-2016': 'All Factory Colors Available' },
+        image: 'images/lexus 2015 front bumper.webp',
         inStock: true
     },
     {
-        id: 'llx-002',
+        id: 'llx-001b',
+        name: 'Lexus LX 570 Front Bumper',
+        brand: 'Lexus',
+        category: 'Body Parts',
+        model: 'LX 570',
+        yearStart: 2017,
+        yearEnd: 2022,
+        availableColors: { '2017-2022': 'All Factory Colors Available' },
+        image: 'images/lexus 2020 fornt bumper.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-002a',
         name: 'Lexus LX 570 Back Bumper',
         brand: 'Lexus',
         category: 'Body Parts',
         model: 'LX 570',
-        yearStart: 2008,
-        yearEnd: 2023,
-        availableColors: { '2008-2023': 'All Factory Colors Available' },
-        image: 'images/LC 08 to 11 back bumper.webp',
+        yearStart: 2012,
+        yearEnd: 2016,
+        availableColors: { '2012-2016': 'All Factory Colors Available' },
+        image: 'images/lexus 2015 back bumper.webp',
+        inStock: true
+    },
+    {
+        id: 'llx-002b',
+        name: 'Lexus LX 570 Back Bumper',
+        brand: 'Lexus',
+        category: 'Body Parts',
+        model: 'LX 570',
+        yearStart: 2017,
+        yearEnd: 2022,
+        availableColors: { '2017-2022': 'All Factory Colors Available' },
+        image: 'images/lexus 2020 back bumper.webp',
         inStock: true
     },
     {
